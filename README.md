@@ -14,12 +14,13 @@ Aplicativo para lhe ajudar a organiza suas compras do dia a dia.
 -   [✔️] Vector Icons
 -   [✔️] React Native Svg e Svg Transform
 -   [✔️] Axios
--   [✔️ ] Fire Base
--   [✔️ ] Expo Google Fonts
--   [✔️ ] React Navigation Stack
--   [✔️ ] React Native Gesture Handler
--   [ ✔️] Expo Authentication
--   [✔️ ] React Native Share
+-   [✔️] Fire Base
+-   [✔️] Cloud Firestore
+-   [✔️] Expo Google Fonts
+-   [✔️] React Navigation Stack
+-   [✔️] React Native Gesture Handler
+-   [✔️] Expo Authentication
+-   [✔️] React Native Share
 
 
 
