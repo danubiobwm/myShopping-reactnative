@@ -47,6 +47,11 @@ const handleSingInWithEmailAndPassword=  () =>{
    });
 }
 
+const handleForgotPassword=()=>{
+  auth()
+  .sendPasswordResetEmail(email)
+  .then(()=>Alert.alert('enviamos um link no seu e-mail, para redefinir sua senha!'))
+}
 
   return ( 
     <Container>
@@ -68,7 +73,7 @@ const handleSingInWithEmailAndPassword=  () =>{
       <Button title="Entrar" onPress={handleSingInWithEmailAndPassword} />
 
       <Account>
-        <ButtonText title="Recuperar senha" onPress={() => { }} />
+        <ButtonText title="Recuperar senha" onPress={handleForgotPassword} />
         <ButtonText title="Criar minha conta" onPress={handleCreateUserAccount} />
       </Account>
     </Container>

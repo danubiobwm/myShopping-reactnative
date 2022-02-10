@@ -1,4 +1,5 @@
 import React from 'react';
+import auth from '@react-native-firebase/auth'
 import { ButtonIcon } from '../ButtonIcon';
 
 import { Container, Title } from './styles';
@@ -9,6 +10,12 @@ type Props = {
 }
 
 export function Header({ title, showLogoutButton = false }: Props) {
+
+  const handleLogout =()=>{
+    auth().signOut();
+  }
+
+
   return (
     <Container showLogoutButton={showLogoutButton}>
       <Title>
@@ -21,7 +28,7 @@ export function Header({ title, showLogoutButton = false }: Props) {
           icon="logout"
           color="alert"
           style={{ marginTop: 20 }}
-          onPress={() => {}}
+          onPress={handleLogout}
         />
       }
     </Container>
